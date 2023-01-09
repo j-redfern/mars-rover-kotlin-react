@@ -13,12 +13,14 @@ val App = FC<Props> {
                 css {
                     textAlign = TextAlign.center
                     color = NamedColor.pink
+                    fontFamily = FontFamily.fantasy
+                    fontWeight = FontWeight.bold
+                    fontSize = 25.px
                 }
                 h1 {
                     +"Mars Rover"
                 }
             }
-
 
             div {
                 css {
@@ -28,7 +30,6 @@ val App = FC<Props> {
                     paddingRight = 20.px
                     marginTop = 8.px
                     marginRight = 0.px
-
                 }
 
             div {
@@ -40,7 +41,9 @@ val App = FC<Props> {
             }
 
             div {
-                InitiateRobotForm()
+                Form {
+                    formContents = initiateRobotContents
+                }
             }
         }
         }

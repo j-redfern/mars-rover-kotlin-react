@@ -1,9 +1,9 @@
 # Mars Rover
 
-Building a web application using Kotlin Js and React for self learning purposes.
-This is the frontend part of the repository.
+Building an interactive Mars Rover web application for self learning purposes. 
+This is the FE part of the repository, which connects to the BE via REST API.
 
-Idea is to:
+Idea of the application is to:
 
 - enter the starting co-ordinates (X,Y) 
 - enter facing direction (N.S.E.W) 
@@ -17,6 +17,24 @@ Idea is to:
 |E -> East      | L -> Left    |
 |W -> West      | R -> Right   |
 
+### Design Architecture
+To follow.....
+
+#### Endpoints:
+
+### Tech stack involved
+
+Yarn
+
+Kotlin Js
+
+React
+
+Gradle
+
+Kotlin Emotion
+
+React testing Library
 
 ### To run the application
 
@@ -26,15 +44,14 @@ Idea is to:
 
 `http://localhost:8080/`
 
+### Testing
+
+
 ### Notes
 
 Add `--continous` to the edit config
 
-#### Endpoints:
 
 
-### Tech stack
-Kotlin Js
-React
-Gradle
-Emotion CSS
+
+
