@@ -22,26 +22,20 @@ kotlin {
 }
 
 dependencies {
-    //React, React DOM + Wrappers (chapter 3)
+    //React, React DOM + Wrappers
     implementation(enforcedPlatform("org.jetbrains.kotlin-wrappers:kotlin-wrappers-bom:1.0.0-pre.354"))
     implementation("org.jetbrains.kotlin-wrappers:kotlin-react")
     implementation("org.jetbrains.kotlin-wrappers:kotlin-react-dom")
 
-    //Kotlin React Emotion (CSS) (chapter 3)
+    //Kotlin React Emotion (CSS)
     implementation("org.jetbrains.kotlin-wrappers:kotlin-emotion")
 
-    //Video Player (chapter 7)
-    implementation(npm("react-player", "2.10.1"))
+    //Test
+    testImplementation(kotlin("test-js"))
 
-    //Share Buttons (chapter 7)
-    implementation(npm("react-share", "4.4.0"))
-
-    //Coroutines & serialization (chapter 8)
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
 }
 
-// Heroku Deployment (chapter 9)
+// Heroku Deployment
 tasks.register("stage") {
     dependsOn("build")
 }

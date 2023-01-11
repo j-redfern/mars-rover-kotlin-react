@@ -6,7 +6,7 @@ import react.dom.html.ReactHTML.img
 val Robot = FC<Props> {
     div {
             img {
-                src = "./robot.png"
+                src = "robot.png"
             }
     }
 }

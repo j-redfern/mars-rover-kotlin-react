@@ -34,6 +34,7 @@ val Form = FC<FormContentsProps> { props ->
                             css {
                                 width = 60.pct
                                 fontStyle = FontStyle.italic
+                                fontSize = 10.px
                             }
                             type = InputType.text
                             id = "${content.id}"
@@ -65,7 +66,7 @@ val Form = FC<FormContentsProps> { props ->
                     fontWeight = FontWeight.bold
                 }
                 h2 {
-                    +"Robot position:"
+                    +"getRobot position:"
                 }
             }
         }

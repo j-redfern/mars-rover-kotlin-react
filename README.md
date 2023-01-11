@@ -34,7 +34,9 @@ Gradle
 
 Kotlin Emotion
 
-React testing Library
+Kotest 
+
+//? kotlinx-nodejs
 
 ### To run the application
 
@@ -47,11 +49,17 @@ React testing Library
 ### Testing
 
 
-### Notes
+### Learnings:
 
-Add `--continous` to the edit config
+`--continous` argument for the gradle run command helps, however, the desired outcome is usually on the second browser refresh.
 
+Had some problems with test frameworks. 
 
+`React testing library` does not seem to support Kotlin/Js and `kotlin-react-wrapper` that suppose to be a wrapper to test react rendering doesn't seem to be compatible.
+
+`kotest` have different test style, it is an interesting framework, but doesn't seem to support react component rendering.
+
+`kotlin.test` seems mainly for junit testing.
 
 
 
